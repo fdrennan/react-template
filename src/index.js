@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./App";
+import App from "./routes/App/App";
+import Settings from "./routes/Settings/Settings";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -9,6 +10,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
