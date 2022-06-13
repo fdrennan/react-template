@@ -6,13 +6,13 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <BrowserRouter>
+  <BrowserRouter>
     <div>Hello</div>
-    {/*<Routes>*/}
-    {/*  <Route path="/" element={<App />} />*/}
-    {/*  <Route path="expenses" element={<Expenses />} />*/}
-    {/*  <Route path="invoices" element={<Invoices />} />*/}
-    {/*</Routes>*/}
-  // </BrowserRouter>
-  // <App />
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="expenses" element={<Expenses />} />
+      <Route path="invoices" element={<Invoices />} />
+    </Routes>
+  </BrowserRouter>
+  // {/*// <App />*/}
 );
